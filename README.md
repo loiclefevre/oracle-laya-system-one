@@ -10,4 +10,9 @@ wslc run -d --shm-size 5G --name oracle26ai -p 1521:1521 -e ORACLE_PASSWORD=free
 - copy the files `laya_text_int8_shared.onnx`, `laya_text_int8_shared_external_data.json`, and `laya_text_int8_shared.data` (once unzipped) into the container under `/opt/oracle`
 - connect as developer/free and load the model using `load_model.sql`
 - install the PL/SQL package `laya_text_scorer.sql`
+
+## Inference
 - run some tests using `examples.sql`
+
+## Behind the curtain
+If you wish to know more about the Laya model, I recommend reading this [post](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me).
